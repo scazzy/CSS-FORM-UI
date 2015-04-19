@@ -7,7 +7,6 @@ Available as [CSS](//github.com/scazzy/CSS-FORM-UI/blob/master/css/formui.css), 
 
 ```
 <div class="formui-dropdown">
-    <span class="text">&nbsp;</span>
     <select>
         <option>Select </option>
         <option>Option </option>
