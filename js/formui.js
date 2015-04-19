@@ -2,14 +2,6 @@
     var $b = $b || $('body'),
         $dropdowns = $('.formui-dropdown');
 
-    // Dropdown
-
-    $dropdowns.find('.text').html($dropdowns.find('select').val());
-    $b.on('change', '.formui-dropdown select', function () {
-        var $select = $(this);
-        $select.siblings('.text').html($(this).val());
-    });
-
     // Radio
     $b.on('change', '.formui-radio input[type="radio"]', function () {
         var $radio = $(this);

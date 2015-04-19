@@ -57,8 +57,6 @@ Available as [CSS](//github.com/scazzy/CSS-FORM-UI/blob/master/css/formui.css), 
 
 > **The magic!** : We hide the real DOM element in such a way that it exists but remains invisible. This allows any clicks or action on that element (in all 3 cases) to function naturally. 
 
-> **For Select/dropdown**: Only javascript required is to "display" selected text.
-
 > **For Checkbox/Radio**: Only javascript required is to add a "checked" class to the wrapper". 
 
 >> Whole CSS is completely customizable, and you can use it as part of your code instead of a library. It just shows a way how to style your Form Elements. Feel free to change class name, and everything else. 
