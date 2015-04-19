@@ -1,17 +1,16 @@
 (function () {
-    var $b = $b || $('body'),
-        $dropdowns = $('.formui-dropdown');
+    var $b = $('body');
 
     // Radio
     $b.on('change', '.formui-radio input[type="radio"]', function () {
-        var $radio = $(this);
-        $radio.parent('.option').addClass('checked').siblings('.option').removeClass('checked');
+        var $opt = $(this);
+        $opt.parent('.option').addClass('checked').siblings('.option').removeClass('checked');
     });
 
     // Checkbox
     $b.on('change', '.formui-checkbox input[type="checkbox"]', function () {
-        var $radio = $(this);
-        $radio.parent('.option').toggleClass('checked');
+        var $opt = $(this);
+        $opt.parent('.option').toggleClass('checked');
     });
 
 })();
