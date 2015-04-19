@@ -3,6 +3,7 @@ Styling CSS Forms - Dropdown (Select), Checkbox and Radio in CSS!
 
 Available as [CSS](//github.com/scazzy/CSS-FORM-UI/blob/master/css/formui.css), and [LESS](//github.com/scazzy/CSS-FORM-UI/blob/master/css/less/formui.less) files.
 
+**Demo** : [Click here](https://rawgit.com/scazzy/CSS-FORM-UI/master/index.html)
 
 ![Alt text](https://i.imgur.com/q5cOV6A.png "Style Form select dropdown radio checkbox in css")
 
