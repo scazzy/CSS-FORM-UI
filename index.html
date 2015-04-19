@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FORM UI - Styling Dropdown (select), checkbox and radio with css</title>
+    <link rel="stylesheet" href="css/formui.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+
+<header class="header">
+    <h1>Styling CSS Forms - <small>Lightweight, simple, extensible</small></h1>
+    <h3>Styling Dropdown (Select), Checkbox and Radio in CSS!</h3>
+    <h4>
+</header>
+
+<div class="container">
+
+<div class="well-flat">
+    Available as CSS, and LESS files.
+</div>
+
+<form id="form-wrap">
+
+    <div class="row">
+        <p><strong>Dropdown</strong></p>
+        <div class="formui-dropdown">
+            <span class="text">&nbsp;</span>
+            <select>
+                <option>Select</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+            </select>
+        </div>
+    </div>
+
+<pre class="well">
+&lt;div class="formui-dropdown"&gt
+    &lt;span class="text"&gt;&amp;nbsp;&lt;/span&gt;
+    &lt;select&gt;
+        &lt;option&gt;Select &lt;/option&gt;
+        &lt;option&gt;Option &lt;/option&gt;
+        &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+</pre>
+
+    <div class="row">
+        <p><strong>Radio</strong></p>
+        <label class="formui-radio option checked">
+            <input type="radio" name="radio" value="a" checked/>Option a
+        </label>
+        <label class="formui-radio option">
+            <input type="radio" name="radio" value="b"/>
+            Option b
+        </label>
+    </div>
+
+<pre class="well">
+&lt;label class="formui-radio option"&gt;
+    &lt;input type="radio" name="radio" value="a"/&gt;
+    Option a
+&lt;/label&gt;
+
+&lt;label class="formui-radio option"&gt;
+    &lt;input type="radio" name="radio" value="b"/&gt;
+    Option b
+&lt;/label&gt;
+</pre>
+
+    <div class="row">
+        <p><strong>Checkbox</strong></p>
+        <label class="formui-checkbox option checked">
+            <input type="checkbox" name="checkbox[]" value="a"  checked/>
+            Option a
+        </label>
+        <label class="formui-checkbox option">
+            <input type="checkbox" name="checkbox[]" value="b"/>
+            Option b
+        </label>
+        <label class="formui-checkbox option">
+            <input type="checkbox" name="checkbox[]" value="c"/>
+            Option c
+        </label>
+    </div>
+
+<pre class="well">
+&lt;label class="formui-checkbox option"&gt;
+    &lt;input type="checkbox" name="checkbox[]" value="a"/&gt;
+    Option a
+&lt;/label&gt;
+
+&lt;label class="formui-checkbox option"&gt;
+    &lt;input type="checkbox" name="checkbox[]" value="b"/&gt;
+    Option b
+&lt;/label&gt;
+
+&lt;label class="formui-checkbox option"&gt;
+    &lt;input type="checkbox" name="checkbox[]" value="c"/&gt;
+    Option c
+&lt;/label&gt;
+</pre>
+
+
+    <p><strong>Text input</strong> - Roll your own</p>
+
+    <div class="row">
+        <label>Full name</label>
+        <input type="text" class="formui" value="" placeholder="Your full name" />
+    </div>
+    <div class="row">
+        <label>Password</label>
+        <input type="password" class="formui" value="" placeholder="Password" />
+    </div>
+    <div class="row">
+        <textarea class="formui" placeholder="About you"></textarea>
+    </div>
+
+</form>
+
+
+<div class="well-flat">
+    <strong>How it works?</strong><br/>
+    It's extremely simple.
+    We create a single wrapper around our non-stylable form elements (Dropdown, Checkbox &amp; Radio).<br/><br/>
+
+    <strong>The magic!</strong> : We hide the real DOM element in such a way that it exists but remains invisible.<br/>
+    This allows any clicks or action on that element (in all 3 cases) to function naturally.<br/>
+
+    <strong>For Select/dropdown</strong>: Only javascript required is to "display" selected text.<br/>
+    <strong>For Checkbox/Radio</strong>: Only javascript required 
+    is to add a "checked" class to the wrapper".
+
+    <br/><br/>
+    Whole CSS is completely customizable, and you can use it as part of your code instead of a library. It just shows a way how to style your Form Elements. Feel free to change class name, and everything else.
+
+    <br/><br/>
+    This minimal and still natural method allows all UI elements to work naturally, for getting or changing data. No specific 
+    library calls for those.
+    
+    <br/><br/>
+    (Textboxes, textareas, buttons - are always stylable, hence not added in this lib)
+
+    <br/><br/>
+    Want more? - If you want it as a library with more functionalities, feel free to create an issue on the github.
+
+</div>
+
+
+</div>
+
+
+
+
+<footer class="footer">
+<strong>CSS FORM UI</strong> by <a href="http://eltonjain.com">Elton Jain</a> | Github<a href="http://github.com/scazzy">/scazzy</a> | Twitter<a href="http://twitter.com/eltonjain">/eltonjain</a>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script src="js/formui.js"></script>
+
+</div>
+</body>
+</html>

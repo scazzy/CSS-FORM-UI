@@ -1,0 +1,129 @@
+/*!
+ * CSS Form UI
+ *
+ * @author: Elton Jain
+ * @website: eltonjain.com
+ * @github: http://github.com/scazzy
+ *
+ * Elements
+ * - Select / dropdown
+ * - Checkbox
+ * - Radio
+*/
+[class*=formui] {
+  border: 0;
+  padding: 5px;
+  font-size: 13px;
+  border: 1px solid #cccccc;
+  position: relative;
+  border-radius: 3px;
+}
+.formui-dropdown {
+  padding: 5px;
+  font-size: 14px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 300px;
+}
+.formui-dropdown select {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.formui-dropdown .text {
+  display: block;
+}
+.formui-dropdown:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #eee;
+  color: #fff;
+  width: 30px;
+  border-radius: 0 3px 3px 0;
+  text-align: center;
+}
+.formui-dropdown:after {
+  content: "v";
+  position: absolute;
+  vertical-align: middle;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  width: 30px;
+  height: 100%;
+  line-height: 24px;
+  font-weight: bold;
+}
+.formui-radio {
+  border: 0;
+  padding: 0;
+  margin-right: 8px;
+}
+.formui-radio input {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+.formui-radio:before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+}
+.formui-radio:hover:before,
+.formui-radio:focus:before {
+  background: #f8f8f8;
+  border-color: #999999;
+}
+.formui-radio.checked:before {
+  background: #cccccc;
+  content: "\d7";
+  font-weight: bold;
+  text-align: center;
+}
+.formui-checkbox {
+  border: 0;
+  padding: 0;
+  margin-right: 8px;
+}
+.formui-checkbox input {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+.formui-checkbox:before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+.formui-checkbox:hover:before,
+.formui-checkbox:focus:before {
+  background: #f8f8f8;
+  border-color: #999999;
+}
+.formui-checkbox.checked:before {
+  background: #cccccc;
+  content: "\d7";
+  font-weight: bold;
+  text-align: center;
+}
