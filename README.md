@@ -5,10 +5,10 @@ Available as [CSS](//github.com/scazzy/CSS-FORM-UI/blob/master/css/formui.css), 
 
 **Demo** : [Click here](https://rawgit.com/scazzy/CSS-FORM-UI/master/index.html)
 
-![Alt text](https://i.imgur.com/q5cOV6A.png "Style Form select dropdown radio checkbox in css")
+![Alt text](https://i.imgur.com/5GwlKQa.png "Style Form select dropdown radio checkbox in css")
 
 ##Dropdown
-
+No damn javascript required!
 ```
 <div class="formui-dropdown">
     <select>
@@ -18,6 +18,7 @@ Available as [CSS](//github.com/scazzy/CSS-FORM-UI/blob/master/css/formui.css), 
     </select>
 </div>
 ```
+<br>
 
 ##Radio
 
@@ -32,6 +33,15 @@ Available as [CSS](//github.com/scazzy/CSS-FORM-UI/blob/master/css/formui.css), 
     Option b
 </label>
 ```
+
+A line of jQuery to add 'checked' class
+```
+$('body').on('change', '.formui-radio input[type="radio"]', function () {
+    var $opt = $(this);
+    $opt.parent('.option').addClass('checked').siblings('.option').removeClass('checked');
+});
+```
+<br>
 
 ##Checkbox
 
@@ -51,6 +61,18 @@ Available as [CSS](//github.com/scazzy/CSS-FORM-UI/blob/master/css/formui.css), 
     Option c
 </label>
 ```
+
+A line of jQuery to toggle 'checked' class
+```
+$('body').on('change', '.formui-checkbox input[type="checkbox"]', function () {
+    var $opt = $(this);
+    $opt.parent('.option').toggleClass('checked');
+});
+```
+
+
+<br><br>
+
 
 > ###How it works?
 > It's extremely simple.
